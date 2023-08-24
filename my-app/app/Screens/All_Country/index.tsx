@@ -98,7 +98,7 @@ export default function App(props) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={{padding:13}}>
-        <TextInput style={{borderWidth:1, borderRadius:30, height:50, padding:15, marginBottom:20}}
+        <TextInput style={{borderWidth:1, borderRadius:30, height:50, padding:15, marginBottom:10}}
         placeholder={t('all_country.placeholder')}
         onChangeText={(text)=>{
           searchByCountry(text)
@@ -106,6 +106,7 @@ export default function App(props) {
         />
         <View>
           <FlatList
+          style={{marginBottom:80}}
           contentContainerStyle={{justifyContent:'space-around'}}
           bounces={false}
           showsVerticalScrollIndicator={false}

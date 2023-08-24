@@ -8,8 +8,16 @@ import {
 } from 'react-native';
 import { NavigationContainer, DefaultTheme, DarkTheme, useNavigation} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import LocalizationContext from '../LocalizationContext';
 
 import Dashboard from "../app/Screens/Dashboard";
+import Setting from "../app/Screens/Setting";
+import All_Country from "../app/Screens/All_Country";
+import Sort from "../app/Screens/Sort";
+import Login from "../app/Screens/Login";
+import Register from "../app/Screens/Register";
+import Country_Detail from "../app/Screens/Country_Detail";
+import BottomTab from "./BottomTab";
 
 
 const Stack = createNativeStackNavigator();
@@ -34,28 +42,53 @@ const MyTheme = {
 // );
 
 export default function App({ colorScheme }: { colorScheme: ColorSchemeName }) {
+  const { t, i18n } = React.useContext(LocalizationContext);
 
   return (
     <NavigationContainer theme={colorScheme === 'dark' ? MyTheme : DefaultTheme}>
-      <Stack.Navigator initialRouteName="Dashboard">
+      <Stack.Navigator initialRouteName="Login">
         <Stack.Screen
-          name="Dashboard"
-          component={Dashboard}
-          options={{headerShown: false}}
+          name="Login"
+          component={Login}
+          options={{headerShown:false}}
         />
-        {/*<Stack.Screen
-          name="Dashboard"
-          component={Dashboard}
+        <Stack.Screen
+          name="Register"
+          component={Register}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="BottomTab"
+          component={BottomTab}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen
+          name="All_Country"
+          component={All_Country}
           options={({ navigation, route }) => ({
+            title:'All Country',
             headerTitleStyle: styles.blackHeaderTitleStyle,
             headerStyle:styles.whiteHeaderStyle,
           })}
-        />*/}
-          {/*<Stack.Screen
-            name="BottomTab"
-            component={BottomTab}
-            options={{headerShown:false}}
-          />*/}
+        />
+        <Stack.Screen
+          name="Country_Detail"
+          component={Country_Detail}
+          options={({ navigation, route }) => ({
+            title:'Country Detail',
+            headerTitleStyle: styles.blackHeaderTitleStyle,
+            headerStyle:styles.whiteHeaderStyle,
+          })}
+        />
+        <Stack.Screen
+          name="Sort"
+          component={Sort}
+          options={({ navigation, route }) => ({
+            title:'Sort',
+            headerTitleStyle: styles.blackHeaderTitleStyle,
+            headerStyle:styles.whiteHeaderStyle,
+          })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

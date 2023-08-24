@@ -1,0 +1,72 @@
+{
+  "welcome":{
+    "welcome":"Welcome"
+  },
+  "login":{
+    "title":"Login",
+    "address_placeholder":"Enter Email Address",
+    "password_placeholder":"Enter Password",
+    "button":"Login",
+    "no_account":"No account? Register for one",
+    "register":"Register"
+  },
+  "register":{
+    "title":"Register",
+    "name_placeholder":"Enter Your Name",
+    "email_placeholder":"Enter Email Address",
+    "phone_placeholder":"Enter Phone Number",
+    "password_placeholder":"Enter Password",
+    "confirm_password_placeholder":"Enter Confirm Password",
+    "button":"Register",
+    "back":"Back"
+  },
+  "dashboard":{
+    "title":"Global Covid 19 statistics (World Wides) (Functional Requirement 1)",
+    "total_case":"Total Cases",
+    "total_recovered":"Total Recovered",
+    "total_death":"Total Death",
+    "button1":"View All Country Data (Api)",
+    "button2":"Sort Country (Dummy Data)"
+  },
+  "sort":{
+    "button":"Sort By Alphabatical order",
+    "empty_flatlist":"Nothing to Display"
+  },
+  "setting":{
+    "logout":"Logout",
+    "en":"Change to English(EN)",
+    "cn":"Change to Chinese(CN)"
+  },
+  "all_country":{
+    "placeholder":"Search Country"
+  },
+  "country_detail":{
+    "country_name":"Country Name",
+    "continent":"Continent",
+    "active":"Active",
+    "activepermillion":"Activer per one million",
+    "cases":"Cases",
+    "casespermillion":"Cases per one million",
+    "critical":"Critical",
+    "criticalpermillion":"Critical per one million",
+    "death":"Death",
+    "deathpermillion":"Death per one million",
+    "onecaseperpeople":"One case per people",
+    "onedeathperpeople":"One Death per people",
+    "onetestperpeople":"One Test per people",
+    "population":"Population",
+    "recovered":"Recovered",
+    "recoveredpermillion":"Recovered one per million",
+    "test":"Test",
+    "testpermillion":"Test per one million",
+    "todaycase":"Today Cases",
+    "todaydeaths":"Today Deaths",
+    "todayrecovered":"Today Recovered",
+    "testpermillion":"Test per one million",
+    "updatedat":"Updated at"
+  },
+  "bottomtab":{
+    "Dashboard":"Dashboard",
+    "Setting":"Setting"
+  },
+}
